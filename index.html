@@ -6,12 +6,13 @@
 	<title>Stellwagen Email Signature Generator</title>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" id="viewport" content="width=device-width,user-scalable=no">
+
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
-	<link rel="stylesheet" href="/css/styles.css" />
+	<link rel="stylesheet" href="css/styles.css" />
 
 </head>
 
@@ -21,13 +22,21 @@
 			<div class="input">
 
 				<form id="user_id_form">
-					<p><label for="full-name">Full Name:</label><INPUT type="text" size="20" id="full-name" name="full-name" placeholder="Enter your full name" /><br>
+					<p>
+						<label for="full-name">Full Name:</label><input type="text" size="20" id="full-name" name="full-name" placeholder="Enter your full name" /><br>
 						<label for="title">Title:</label><input type="text" rows="20" name="title" id="title" placeholder="Your Title" /><br>
 						<label for="email">Email:</label><input type="text" rows="20" name="email" id="email" placeholder="Enter your email" /><br>
-						<label for="phone">Phone:</label><input type="text" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br></p>
+						<label for="phone">Phone:</label><input type="text" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br>
+						<label for="city">City:</label>
+							<select id="city">
+							  <option value="Dublin">Dublin</option>
+							  <option value="London">London</option>
+							  <option value="Korea">Korea</option>
+							  <option value="Stamford">Stamford</option>
+							</select><br>
+						</p>
 
-						<button name="get_sig" class="user_button" onclick="generateSig();">Generate</button>
-						<!-- <input type="button" name="get_sig" value="Generate" class="user_button" onclick="generateSig();"> -->
+						<input type="button" name="get_sig" value="Generate" class="user_button" onclick="generateSig();">
 
 					</p>
 				</form>
@@ -35,32 +44,34 @@
 			</div>
 
 			<div id="output" name="output">
-				<table style="margin-top:30px;margin-bottom:30px;width:95%" border="0" id="code">
-					<tbody><tr height="45">
-						<td>
-							<p><span style="font-family:Arial, Helvetica, sans-serif; font-size:13px;color:#666666;"><b class="employee-name">First Last</b> | <span style="font-size:12px;margin-bottom:25px;" class="employee-title">You're a Super Star</span></span><br>
-								<br>
-								<img src="####" alt="" width="102" height="51"><br>
-								<br>
-								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666;">&nbsp;123 Main St.<br>&nbsp;Fremont, CA 12345</span><br>
-								<br>
-								<!--email -->
-								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-decoration:none!important;"><strong>&nbsp;e:</strong></span>
-								<a style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666 !important; text-decoration:none!important;"><font style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666 !important; text-decoration:none!important;" class="employee-mail">your-email@yourdomain.com</font></a><br>
-								<!--phone -->
-								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;">&nbsp;<strong>ph:</strong> </span>
-								<span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666;" class='employee-number'>xxx.xxx.xxxx</span><br>
-								<!--website -->
-								<span style="font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#000000;"><b><a href="http://www.yourdomain.com" style="color:#000000; text-decoration:none!important;">&nbsp;www.yourdomain.com</a></b></span><br>
-								<em aria-hidden="true"><br>
-									&nbsp;<a href="https://www.something.com/" target="new"><img src="https://www.yourdomain.com/images/facebook-256.png" width="16" height="16"></a>
-									<a href="https://www.linkedin.com/yourdomain/" target="new">
 
-										<img style="padding-left:6px" src="https://www.yourdomain.com/images/linkedin-128.png" width="16" height="16"></a><br>
-									</em>
-							</p><em aria-hidden="true"></em></td>
-						</tr>
-					</tbody>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;" id="code">
+					<tr>
+				    	<td>
+								<font style="color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">---</font><br>
+				        <font class="employee-name" style="color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">Full Name</font><br>
+				        <font style="color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif;"><strong class="employee-title">Job title</strong></font><br>
+								<!-- <font style="color:#333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">| Stellwagen Technology</font><br> We are not going to do divisions? -->
+				      </td>
+				    </tr>
+				    <tr>
+				    	<td height="15"></td>
+				    </tr>
+				    <tr>
+				    	<td>
+			        	<a target="_blank" href="http://www.stellwagengroup.com"><img border="0" src="http://www.stellwagengroup.com/wp-content/uploads/2017/01/stellwagen-logo.png" width="247" alt="Stellwagen Group Logo" /></a>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td height="15"></td>
+				    </tr>
+				    <tr>
+				    	<td style="color: #666666; font-size: 13px; font-family: Arial, Helvetica, sans-serif; line-height:18px">
+				        	 <strong style="color:#333333;font-family: Arial, Helvetica, sans-serif;">m:</strong> <a class="employee-number" href="" style="text-decoration:none;border:none;color:#666666;">Your mobile</a>
+				            <strong style="color:#333333;font-family: Arial, Helvetica, sans-serif;"><span style="color:white">–-</span>p:</strong> <a class="employee-office-number"href="" style="text-decoration:none;border:none;color:#666666;">City Office Number</a><br>
+				            <strong style="color:#333333;font-family: Arial, Helvetica, sans-serif;">a:</strong> <span class="employee-city">Your address</span><br>
+				       </td>
+				    </tr>
 				</table>
 			</div>
 			<input id="js-copy" class="btn" type="button" value="Copy"  data-clipboard-target="#code">
@@ -68,5 +79,6 @@
 
 	</main>
 </body>
-<script src="/js/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/scripts.js"></script></html>
+<script src="js/clipboard.min.js"></script>
+<script src="js/scripts.js"></script>
+</html>
