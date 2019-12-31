@@ -33,6 +33,7 @@ function generateSig(){
 
 
 	$('button').show();
+	$('#js-copy').val('Copy');
 }
 clipboard.on('success', function(e) {
 	$('#js-copy').val('Copied!');

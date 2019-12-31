@@ -17,16 +17,17 @@
 </head>
 
 <body>
-	<main>
+	<main class="main-container">
 		<div class="column-action">
-			<div class="input">
+
+			<div class="input" class="layout__column">
 
 				<form id="user_id_form">
 					<p>
-						<label for="full-name">Full Name:</label><input type="text" size="20" id="full-name" name="full-name" placeholder="Enter your full name" /><br>
-						<label for="title">Title:</label><input type="text" rows="20" name="title" id="title" placeholder="Your Title" /><br>
-						<label for="email">Email:</label><input type="text" rows="20" name="email" id="email" placeholder="Enter your email" /><br>
-						<label for="phone">Phone:</label><input type="text" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br>
+						<label for="full-name">Full Name:</label><input type="text" size="20" id="full-name" name="full-name" placeholder="Enter your full name" /><br><br>
+						<label for="title">Title:</label><input type="text" rows="20" name="title" id="title" placeholder="Your Title" /><br><br>
+						<label for="email">Email:</label><input type="text" rows="20" name="email" id="email" placeholder="Enter your email" /><br><br>
+						<label for="phone">Phone:</label><input type="text" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br><br>
 						<label for="city">City:</label>
 							<select id="city">
 							  <option value="Dublin">Dublin</option>
@@ -35,7 +36,7 @@
 							  <option value="Stamford">Stamford</option>
 							</select><br>
 						</p>
-
+						<br />
 						<input type="button" name="get_sig" value="Generate" class="user_button" onclick="generateSig();">
 
 					</p>
@@ -43,7 +44,7 @@
 
 			</div>
 
-			<div id="output" name="output">
+			<div id="output" name="output" class="layout__column">
 
 				<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;" id="code">
 					<tr>
@@ -74,8 +75,9 @@
 				       </td>
 				    </tr>
 				</table>
-			</div>
+				<br /> <br />
 			<input id="js-copy" class="btn" type="button" value="Copy"  data-clipboard-target="#code">
+			</div>
 		</div><!--end column-action-->
 
 	</main>
