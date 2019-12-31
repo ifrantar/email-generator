@@ -13,8 +13,8 @@ function generateSig(){
 
 	$searchBlock.find('.employee-name').text(name);
 	$searchBlock.find('.employee-title').text(title);
-	$searchBlock.find('.employee-mail').text(email);
-	$('.column-instructions').find('.employee-mail').attr('href','mailto:'+email);
+	$searchBlock.find('.employee-email').text(email);
+	$('#output').find('.employee-email').attr('href','mailto:' + email);
 	$searchBlock.find('.employee-number').text(phone);
 
 	if (city == "Dublin") {
