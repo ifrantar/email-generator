@@ -1,6 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin:0;
 	padding:0;
+	color: #262B3E;
 }
 
 label {
@@ -25,7 +30,7 @@ h3 span {
 	position:absolute;
 	top:0;
 	margin-left:-80px;
-	color: #3EC4CC;
+	color: #262B3E;
 	line-height: 1;
 }
 
@@ -46,7 +51,7 @@ h3 span {
 
 .input {
 	font: normal 15px/1.5 Arial, sans-serif;
-	width: 350px;
+	width: 430px;
 	background: #E5F2F2;
 }
 
@@ -62,6 +67,7 @@ input, select {
 		border-radius: 4px;
 		padding:4px 8px;
 		background:white;
+		height: 36px;
 }
 
 input:focus, select:focus {
@@ -84,42 +90,3 @@ input[type="button"]:hover {
 .btn {
 	font: normal 15px/1.5 Arial, sans-serif;
 }
-
-
-/* body{
-	padding:10px;
-	background-color:#fff;
-	font-family:Helvetica, sans-serif;
-	font-size:16px;
-}
-.form-wrapper{
-	font-family:Helvetica, sans-serif;
-	font-size:16px;
-}
- header{
- 	font-family:Helvetica, sans-serif;
- }
-label{
-	width: 120px;
-	display:inline-block;
-	text-align: right;
-    margin-right: 10px;
-    font-weight: bold;
-    margin-bottom:10px;
-}
-button{
-	margin-top:100px;
-	background:transparent;
-	border:0;
-	cursor:pointer;
-}
-#user_id_form{
-	border-bottom:1px solid #52717c;
-}
-.copy-btn{
-	width: 20px;
-}
-.column-action{
-	display:inline-block;
-	vertical-align: top;
-} */
