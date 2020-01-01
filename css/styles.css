@@ -90,3 +90,7 @@ input[type="button"]:hover {
 .btn {
 	font: normal 15px/1.5 Arial, sans-serif;
 }
+
+.br_space {
+	margin-top:98px;
+}
