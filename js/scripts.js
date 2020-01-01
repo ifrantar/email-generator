@@ -36,7 +36,7 @@ function generateSig(){
 	$('#js-copy').val('Copy');
 }
 clipboard.on('success', function(e) {
-	$('#js-copy').val('Copied!');
+	$('#js-copy').val('✓ Copied!');
 });
 
 clipboard.on('error', function(e) {

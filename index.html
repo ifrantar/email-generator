@@ -21,14 +21,14 @@
 		<div class="column-action">
 
 			<div class="input" class="layout__column">
-
+				<h3><span>1.</span>Fill in the form with your personal information. Then press the 'Generate' button to create your signature.</h3>
 				<form id="user_id_form">
 					<p>
 						<label for="full-name">Full Name:</label><input type="text" size="20" id="full-name" name="full-name" placeholder="Enter your full name" /><br><br>
 						<label for="title">Title:</label><input type="text" rows="20" name="title" id="title" placeholder="Your Title" /><br><br>
-						<label for="email">Email:</label><input type="text" rows="20" name="email" id="email" placeholder="Enter your email" /><br><br>
-						<label for="phone">Phone:</label><input type="text" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br><br>
-						<label for="city">City:</label>
+						<label for="email">Email:</label><input type="email" rows="20" name="email" id="email" placeholder="Enter your email" /><br><br>
+						<label for="phone">Phone:</label><input type="tel" rows="20" name="phone" id="phone" placeholder="Enter your number" /><br><br>
+						<label for="city">Office city:</label>
 							<select id="city">
 							  <option value="Dublin">Dublin</option>
 							  <option value="London">London</option>
@@ -43,40 +43,42 @@
 				</form>
 
 			</div>
+      <div class="layout__column">
+				<h3><span>2.</span> Once the signature is generated, press the 'Copy' button to copy to your clipboard. Then paste it on your email client.</h3>
+				<div id="output" name="output">
 
-			<div id="output" name="output" class="layout__column">
-
-				<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;" id="code">
-					<tr>
-				    	<td>
-								<font style="color: #262B3E; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">---</font><br>
-				        <font class="employee-name" style="color: #262B3E; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">Full Name</font><br>
-				        <font style="color: #262B3E; font-size: 13px; font-family: Arial, Helvetica, sans-serif;"><strong class="employee-title">Job title</strong></font><br>
-								<!-- <font style="color:#333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">| Stellwagen Technology</font><br> WE ARE NO LONGER DOING DIVISIONS (?) -->
-				      </td>
-				    </tr>
-				    <tr>
-				    	<td height="15"></td>
-				    </tr>
-				    <tr>
-				    	<td>
-			        	<a target="_blank" href="http://www.stellwagengroup.com"><img border="0" src="https://stellwagen-email-signature.netlify.com/images/stellwagen-logo.png" width="230" alt="Stellwagen Group Logo" /></a>
-			        </td>
-				    </tr>
-				    <tr>
-				    	<td height="8"></td>
-				    </tr>
-				    <tr>
-				    	<td style="color: #4A4F62; font-size: 13px; font-family: Arial, Helvetica, sans-serif; line-height:18px">
-									<strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;">e:</strong> <a class="employee-email" href="" style="text-decoration:none;border:none;color:#4A4F62;">Your Email</a>
-				        	<strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;"><span style="color:white">–-</span>m:</strong> <a class="employee-number" href="" style="text-decoration:none;border:none;color:#4A4F62;">Your mobile</a>
-				          <strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;"><span style="color:white">–-</span>p:</strong> <a class="employee-office-number"href="" style="text-decoration:none;border:none;color:#4A4F62;">City Office Number</a><br>
-				          <strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;">a:</strong> <span class="employee-city">Your address</span><br>
-				       </td>
-				    </tr>
-				</table>
-				<br /> <br />
-			<input id="js-copy" class="btn" type="button" value="Copy"  data-clipboard-target="#code">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;" id="code">
+						<tr>
+					    	<td>
+									<font style="color: #262B3E; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">---</font><br>
+					        <font class="employee-name" style="color: #262B3E; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">Full Name</font><br>
+					        <font style="color: #262B3E; font-size: 13px; font-family: Arial, Helvetica, sans-serif;"><strong class="employee-title">Job title</strong></font><br>
+									<!-- <font style="color:#333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">| Stellwagen Technology</font><br> WE ARE NO LONGER DOING DIVISIONS (?) -->
+					      </td>
+					    </tr>
+					    <tr>
+					    	<td height="15"></td>
+					    </tr>
+					    <tr>
+					    	<td>
+				        	<a target="_blank" href="http://www.stellwagengroup.com"><img border="0" src="https://stellwagen-email-signature.netlify.com/images/stellwagen-logo.png" width="230" alt="Stellwagen Group Logo" /></a>
+				        </td>
+					    </tr>
+					    <tr>
+					    	<td height="8"></td>
+					    </tr>
+					    <tr>
+					    	<td style="color: #4A4F62; font-size: 13px; font-family: Arial, Helvetica, sans-serif; line-height:18px">
+										<strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;">e:</strong> <a class="employee-email" href="" style="text-decoration:none;border:none;color:#4A4F62;">Your Email</a>
+					        	<strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;"><span style="color:white">–-</span>m:</strong> <a class="employee-number" href="" style="text-decoration:none;border:none;color:#4A4F62;">Your mobile</a>
+					          <strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;"><span style="color:white">–-</span>p:</strong> <a class="employee-office-number"href="" style="text-decoration:none;border:none;color:#4A4F62;">City Office Number</a><br>
+					          <strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;">a:</strong> <span class="employee-city">Your address</span><br>
+					       </td>
+					    </tr>
+					</table>
+					<br /> <br />
+				<input id="js-copy" class="btn" type="button" value="Copy"  data-clipboard-target="#code">
+				</div>
 			</div>
 		</div><!--end column-action-->
 
