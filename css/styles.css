@@ -52,7 +52,7 @@ h3 span {
 .input {
 	font: normal 15px/1.5 Arial, sans-serif;
 	width: 430px;
-	background: #E5F2F2;
+	background: #E9F8F7;
 }
 
 .input, .output {
@@ -63,7 +63,7 @@ h3 span {
 input, select {
 		font:inherit;
 		width:200px;
-		border: 2px solid #3EC4CC;
+		border: 2px solid #1FB9B0;
 		border-radius: 4px;
 		padding:4px 8px;
 		background:white;
@@ -72,19 +72,19 @@ input, select {
 
 input:focus, select:focus {
 	outline: none;
-	box-shadow:0 0 10px #3EC4CC;
+	box-shadow:0 0 10px #1FB9B0;
 }
 
 input[type="button"] {
 	border:0;
 	border-radius:4px;
-	background:#3EC4CC;
+	background:#1FB9B0;
 	color:white;
 	cursor: pointer;
 }
 
 input[type="button"]:hover {
-	background:#2DAEB6;
+	background:#1B948D;
 }
 
 .btn {
