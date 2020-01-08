@@ -44,6 +44,8 @@ function generateSig(){
 		$searchBlock.find('.employee-team').html("This e-mail and any files transmitted with it are CONFIDENTIAL and intended solely for the use of the individual or entity to whom they are addressed.<br> If you have received this e-mail in error please notify the sender. Should you require further assistance please contact:  Stelltec at +353 (1) 607 7000.<br> Stellwagen Technology Limited is registered in Bermuda with Company No. 51478<br> Irish Branch: Embassy House, Ballsbridge, Dublin 4, Ireland; Company No. 908481 ");
 	} else if (team == "Korea") {
 		$searchBlock.find('.employee-team').html("This e-mail and any files transmitted with it are CONFIDENTIAL and intended solely for the use of the individual or entity to whom they are addressed.<br> If you have received this e-mail in error please notify the sender. Should you require further assistance please contact:  Stellwagen Korea at +353 (1) 607 7000.<br> Stellwagen Korea Limited is registered in Ireland with Company No. 627177<br> Registered Office: Embassy House, Herbert Park Lane, Ballsbridge, Dublin 4, Ireland<br>Directors:   E. O’Reilly │ Christian Joen (Korean) │ D. Butler<br>");
+	} else if (team == "No-Legal") {
+		$searchBlock.find('.employee-team').html("");
 	}
 
 
