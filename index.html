@@ -34,7 +34,16 @@
 							  <option value="London">London</option>
 							  <option value="Korea">Korea</option>
 							  <option value="Stamford">Stamford</option>
-							</select><br>
+							</select><br><br>
+						<label for="team">Team:</label>
+								<select id="team" style="margin-left:-4px;">
+								  <option value="Group">Group</option>
+								  <option value="Capital-UK">Capital UK</option>
+									<option value="Capital-US">Capital US</option>
+								  <option value="Technology">Technology</option>
+								  <option value="Seraph">Seraph</option>
+									<option value="Korea">Korea</option>
+								</select><br>
 						</p>
 						<br />
 						<input type="button" name="get_sig" value="Generate" class="user_button" onclick="generateSig();">
@@ -44,7 +53,7 @@
 
 			</div>
       <div class="layout__column">
-				<h3 style="height:164px"><span>2.</span> Once the signature is generated, press the <em>'Copy'</em> button to copy to your clipboard. Then paste it on your email client.</h3>
+				<h3 style="height:130px"><span>2.</span> Once the signature is generated, press the <em>'Copy'</em> button to copy to your clipboard. Then paste it on your email client.</h3>
 				<div id="output" name="output">
 
 					<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;" id="code">
@@ -75,8 +84,21 @@
 					          <strong style="color:#262B3E;font-family: Arial, Helvetica, sans-serif;">a:</strong> <span class="employee-city">Your address</span><br>
 					       </td>
 					    </tr>
+							<tr>
+								<td height="8"></td>
+							</tr>
+							<tr>
+									<td>
+											<font class="employee-team" style="line-height:8px; color: #666666; font-style: italic; font-size: 10px; font-family: Arial, sans-serif;">Registered company and confidential info</font>
+
+													<!-- <font class="employee-team" style="line-height:8px; color: #666666; font-style: italic; font-size: 10px; font-family: Arial, sans-serif;">This e-mail and any files transmitted with it are CONFIDENTIAL and intended solely for the use of the individual or entity to whom they are addressed.<br/ >
+															If you have received this e-mail in error please notify the sender. Should you require further assistance please contact:  Stelltec at +353 (1) 607 7000.<br/ >
+															Stellwagen Technology Limited is registered in Bermuda with Company No. 51478<br />
+															Irish Branch: Embassy House, Ballsbridge, Dublin 4, Ireland; Company No. 908481</font> -->
+									</td>
+							</tr>
 					</table>
-					
+
 				</div>
 
 				<input id="js-copy" class="btn br_space" type="button" value="Copy"  data-clipboard-target="#code">
