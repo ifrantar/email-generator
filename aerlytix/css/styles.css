@@ -5,7 +5,7 @@
 body {
 	margin:0;
 	padding:0;
-	color: #262B3E;
+	color: #000000;
 }
 
 label {
@@ -14,7 +14,7 @@ label {
 }
 
 h3 {
-	font-family: Arial, sans-serif;
+	font-family: 'Source Sans Pro Bold', Arial, sans-serif;
 	font-weight: normal;
 	font-size:15px;
 	position:relative;
@@ -30,7 +30,7 @@ h3 span {
 	position:absolute;
 	top:0;
 	margin-left:-80px;
-	color: #262B3E;
+	color: #000000;
 	line-height: 1;
 }
 
@@ -50,9 +50,9 @@ h3 span {
 }
 
 .input {
-	font: normal 15px/1.5 Arial, sans-serif;
+	font: normal 15px/1.5 'Source Sans Pro Bold', Arial, sans-serif;
 	width: 430px;
-	background: #E9F8F5;
+	background: #F0F8FC;
 }
 
 .input, .output {
@@ -63,7 +63,7 @@ h3 span {
 input, select {
 		font:inherit;
 		width:200px;
-		border: 2px solid #1FB99D;
+		border: 2px solid #03A9F4;
 		border-radius: 4px;
 		padding:4px 8px;
 		background:white;
@@ -72,24 +72,24 @@ input, select {
 
 input:focus, select:focus {
 	outline: none;
-	box-shadow:0 0 10px #1FB99D;
+	box-shadow:0 0 10px #03A9F4;
 }
 
 input[type="button"] {
 	border:0;
 	border-radius:4px;
-	background:#1FB99D;
+	background:#03A9F4;
 	color:white;
 	cursor: pointer;
 	font-weight: bold;
 }
 
 input[type="button"]:hover {
-	background:#19947E;
+	background:#0596D8;
 }
 
 .btn {
-	font: normal 15px/1.5 Arial, sans-serif;
+	font: normal 15px/1.5 'Source Sans Pro Bold', Arial, sans-serif;
 }
 
 .br_space {
